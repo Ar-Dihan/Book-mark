@@ -3,15 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="../dist/output.css" rel="stylesheet" />
     <title>BookMarkO</title>
   </head>
-  <body>
+  <body class="font-Poppins">
     <!-- Header -->
     <header>
-      <nav class="container">
-        <h1 class="">atik</h1>
+      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+        <div class="py-1">
+          <img src="/images/logo-bookmark.svg" alt="" />
+        </div>
+        <ul
+          class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-bookMark-blue text-xs"
+        >
+          <li class="cursor-pointer">features</li>
+          <li class="cursor-pointer">pricing</li>
+          <li class="cursor-pointer">contact</li>
+          <button
+            type="button"
+            class="text-white bg-bookMark-red px-9 py-3 rounded-md uppercase"
+          >
+            login
+          </button>
+        </ul>
+        <div class="flex sm:hidden flex-1 justify-end">
+          <i class="text-2xl fa-solid fa-bars"></i>
+        </div>
       </nav>
     </header>
+
+    <!-- Hero -->
+    <section class="relative">
+      <div
+        class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28"
+      >
+        <!-- content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2
+            class="text-3xl text-bookMark-blue md:tex-4 lg:text-5xl text-center lg:text-left mb-6 font-poppins"
+          >
+            A Simple Bookmark <br />
+            Manager
+          </h2>
+          <p class="text-bookMark-gray text-lg text-center lg:text-left mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            doloribus voluptatem animi labore, recusandae aliquid cum vero dicta
+            deserunt adipisci officia neque eveniet veritatis facilis dolorem,
+            natus iste iure non!
+          </p>
+          <div class="flex justify-center flex-wrap gap-6">
+            <button
+              type="button"
+              class="btn btn-purple hover:bg-bookMark-white hover:text-black"
+            >
+              Get it on Chrome</button
+            ><button
+              type="button"
+              class="btn btn-white hover:bg-bookMark-purple hover:text-white"
+            >
+              Get it on firefox
+            </button>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+          <img
+            src="/images/hero-bg.png"
+            alt=""
+            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+          />
+        </div>
+      </div>
+      <!-- rounded rectangel -->
+      <div
+        class="hidden md:block overflow-hidden bg-bookMark-purple rounded-l-full absolute h-80 w-2/4 top-36 right-0 lg:-bottom-28 lg:-right-36"
+      ></div>
+    </section>
+
+    <!-- features -->
+    <section class="bg-bookmark-white py-20 mt-20 lg:mt-60">
+      <!-- Heading -->
+      <div class="container sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-3xl text-center text-bookMark-blue">Features</h1>
+        <p class="text-center text-bookMark-gray mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          obcaecati iusto quae perferendis autem in dolorem, cum possimus veniam
+          enim eaque, nostrum reprehenderit labore officia ratione numquam
+          officiis, nihil error!
+        </p>
+      </div>
+
+      <!-- feature #1 -->
+      <div class="relative mt-20 lg:mt-24">
+        <div
+          class="container flex flex-col lg:flex-row items-center justify-center gap-x-24"
+        >
+          <!-- images -->
+          <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+            <img
+              src="/images/illustration-features-tab-1.png"
+              alt=""
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            />
+          </div>
+          <!-- content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start">
+            <h1 class="text-3xl text-bookMark-blue">BookMark in one Click</h1>
+            <p
+              class="text-bookMark-blue my-4 text-center lg:text-left sm:w-3/4 lg:mb-0"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              ducimus officia nostrum sit, repudiandae accusantium eius omnis
+              iure odio minus beatae corporis eligendi dolores perspiciatis, id
+              exercitationem alias odit? Sunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
